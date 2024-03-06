@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div id="area1" class="area">
+        <h3>Session Storage</h3>
+        <div class="info">
+            <p>Session Storage saves variables untill the session ends, generally when the navigator closes.</p>
+            <p>Go to Inspect//Application//Session to find the variables</p>
+        </div>
+        <h5>Save something through this => </h5>
+        <label for="sessionSaveKey">Variable name: </label>
+        <input id="sessionSaveKey" type="text" value="write a variable name">
+        <label for="sessionSaveValue">Variable value: </label>
+        <input id="sessionSaveValue" type="text" value="write a variable value">
+        <button id="sessionSaveBtn" onclick="sessionSave()">Save</button>
+        <h5>Read something through that => </h5>
+        <label for="sessionReadKey">Variable name: </label>
+        <input id="sessionReadKey" type="text" value="write a variable name">
+        <span id="sessionReadValue">The value of the variable should be shown here</span>
+        <button id="sessionReadBtn" onclick="sessionRead()">Read</button>
+    </div>
+        
+    <div id="area2" class="area">
+        <h3>Local Storage</h3>
+        <div class="info">
+            <p>Local Storage saves variables untill they are activelly deleted.</p>
+            <p>Go to Inspect//Application//Local to find the variables</p>
+        </div>
+        <h5>Save something through this => </h5>
+        <label for="localSaveKey">Variable name: </label>
+        <input id="localSaveKey" type="text" value="write a variable name">
+        <label for="localSaveValue">Variable value: </label>
+        <input id="localSaveValue" type="text" value="write a variable value">
+        <button id="localSaveBtn" onclick="localSave()">Save</button>
+        <h5>Read something through that => </h5>
+        <label for="localReadKey">Variable name: </label>
+        <input id="localReadKey" type="text" value="write a variable name">
+        <span id="localReadValue">The value of the variable should be shown here</span>
+        <button id="localReadBtn" onclick="localRead()">Read</button>
+    </div>
+
+    <div id="area3" class="area">
+        <h3>Cookie Storage [UNDER CONSTRUCTION. DO NOT USE]</h3>
+        <div class="info">
+            <p>Cookie Storage saves variables untill the browser is closed, unless an expiration date is specified.</p>
+            <p>You may need to allow your browser to use cookies.</p>
+            <p>Go to Inspect//Application//cookies to find the variables</p>
+        </div>
+        <h5>Save something through this => </h5>
+        <label for="cookieSaveKey">Variable name: </label>
+        <input id="cookieSaveKey" type="text" value="write a variable name">
+        <label for="cookieSaveValue">Variable value: </label>
+        <input id="cookieSaveValue" type="text" value="write a variable value">
+        <button id="cookieSaveBtn" onclick="cookieSave()">Save</button>
+        <h5>Read something through that => </h5>
+        <label for="cookieReadKey">Variable name: </label>
+        <input id="cookieReadKey" type="text" value="write a variable name">
+        <span id="cookieReadValue">The value of the variable should be shown here</span>
+        <button id="cookieReadBtn" onclick="cookieRead()">Read</button>
+    </div>
+
+    <script src="./main.js"></script>
+</body>
+</html>

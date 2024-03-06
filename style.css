@@ -1,0 +1,26 @@
+.area{
+    border-radius:10px;
+    background-color: darkgreen;
+    color:honeydew;
+    padding:8px;
+    margin:4px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#area2{
+    background-color: gold;
+    color:black;
+}
+
+#area3{
+    background-color: crimson;
+    color:cornsilk;
+}
+
+.info{
+    background-color: beige;
+    color:darkgray;
+    border-radius:8px;
+    padding:4px;
+    margin:4px;
+}
