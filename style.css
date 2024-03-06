@@ -17,6 +17,13 @@
     color:cornsilk;
 }
 
+#area4{
+    background-color: indigo;
+}
+#area4 a {
+    color:aliceblue;
+}
+
 .info{
     background-color: beige;
     color:darkgray;

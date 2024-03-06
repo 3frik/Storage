@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="./style.css" rel="stylesheet">
+</head>
+<body>
+    <div id="area4" class="area">
+        <a href="./index.html">Back</a>
+    </div>
+    <div id="area1" class="area">
+        <h3>Read Session variables here=> </h3>
+        <label for="sessionReadKey">Variable name: </label>
+        <input id="sessionReadKey" type="text" value="write a variable name">
+        <span id="sessionReadValue">The value of the variable should be shown here</span>
+        <button id="sessionReadBtn" onclick="sessionRead()">Read</button>
+    </div>
+    <div id="area2" class="area">
+        <h3>Read Local variables here => </h3>
+        <label for="localReadKey">Variable name: </label>
+        <input id="localReadKey" type="text" value="write a variable name">
+        <span id="localReadValue">The value of the variable should be shown here</span>
+        <button id="localReadBtn" onclick="localRead()">Read</button>
+    </div>
+    <div id="area3" class="area">
+        <h3>Read Cookies here [UNDER CONSTRUCTION]</h3>
+        <label for="cookieReadKey">Variable name: </label>
+        <input id="cookieReadKey" type="text" value="write a variable name">
+        <span id="cookieReadValue">The value of the variable should be shown here</span>
+        <button id="cookieReadBtn" onclick="cookieRead()">Read</button>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>
