@@ -39,3 +39,10 @@ function cookieRead(){
     console.log("Cookie Read. Key: "+cookieKey+" and value: "+cookieValue); //for testing and control
     document.getElementById("CookieReadValue").innerText=cookieValue; //Show the value on screen
 }
+
+function loaded(){  //this code starts after the website is loaded. It shows automatically the vale of a certain stored local variable
+    var objectiveElement = document.getElementById("showValue"); //find where to write the value
+    var testValue = localStorage.getItem("test"); //find the value to show
+    objectiveElement.innerText="The value of the variable 'test' is '"+testValue+"'. This value is automatically loaded and used."; //
+    alert("The value will be shown when this alert message is closed.");
+}
